@@ -48,76 +48,18 @@ const team = [
 console.table(team);
 console.log(team[0].nome)
 
-const teamStamp=document.getElementById("teamContainer").innerHTML = 
+for(let i=0; i<team.length; i++){
+    const teamStamp=document.getElementById("teamContainer").innerHTML += 
     `<div class="team-card">
         <div class="card-image">
             <img
-                src="${team[0].foto}"
+                src="${team[i].foto}"
                 alt="Wayne Barnett"
             />
         </div>
         <div class="card-text">
-            <h3>${team[0].nome}</h3>
-            <p>${team[0].ruolo}</p>
-        </div>
-    </div>
-    <div class="team-card">
-        <div class="card-image">
-            <img
-                src="${team[1].foto}"
-                alt="Wayne Barnett"
-            />
-        </div>
-        <div class="card-text">
-            <h3>${team[1].nome}</h3>
-            <p>${team[1].ruolo}</p>
-        </div>
-    </div>
-    <div class="team-card">
-        <div class="card-image">
-            <img
-                src="${team[2].foto}"
-                alt="Wayne Barnett"
-            />
-        </div>
-        <div class="card-text">
-            <h3>${team[2].nome}</h3>
-            <p>${team[2].ruolo}</p>
-        </div>
-    </div>
-    <div class="team-card">
-        <div class="card-image">
-            <img
-                src="${team[3].foto}"
-                alt="Wayne Barnett"
-            />
-        </div>
-        <div class="card-text">
-            <h3>${team[3].nome}</h3>
-            <p>${team[3].ruolo}</p>
-        </div>
-    </div>
-    <div class="team-card">
-        <div class="card-image">
-            <img
-                src="${team[4].foto}"
-                alt="Wayne Barnett"
-            />
-        </div>
-        <div class="card-text">
-            <h3>${team[4].nome}</h3>
-            <p>${team[4].ruolo}</p>
-        </div>
-    </div>
-    <div class="team-card">
-        <div class="card-image">
-            <img
-                src="${team[5].foto}"
-                alt="Wayne Barnett"
-            />
-        </div>
-        <div class="card-text">
-            <h3>${team[5].nome}</h3>
-            <p>${team[5].ruolo}</p>
+            <h3>${team[i].nome}</h3>
+            <p>${team[i].ruolo}</p>
         </div>
     </div>`
+}
