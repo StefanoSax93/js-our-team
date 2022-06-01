@@ -9,3 +9,34 @@ stampare i dati all’interno di un contenitore nella pagina html in modo dinami
 BONUS:
 stilizziamo la sezione realizzando le card di ciascun membro del team, come nel mockup allegato.
 */
+
+//creo l'array con la lista dei membri del team
+const team = [
+    //inserisco ogni membro come oggetto
+    {
+        nome: "Wayne Barnett",
+        ruolo: "Founder & CEO",
+    },
+    {
+        nome: "Angela Carroll",
+        ruolo: "Chief Editor",
+    },
+    {
+        nome: "Walter Gordon",
+        ruolo: "Office Manager",
+    },
+    {
+        nome: "Angela Lopez",
+        ruolo: "Social Media Manager",
+    },
+    {
+        nome: "Scott Estrada",
+        ruolo: "Developer",
+    },
+    {
+        nome: "Barbara Ramos",
+        ruolo: "Graphics Designer",
+    }
+];
+
+console.table(team);
