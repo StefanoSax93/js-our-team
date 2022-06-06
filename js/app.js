@@ -49,12 +49,12 @@ console.table(team);
 console.log(team[0].nome)
 
 for(let i=0; i<team.length; i++){
-    const teamStamp=document.getElementById("teamContainer").innerHTML += 
+    const teamStamp=document.querySelector(".team-container").innerHTML += 
     `<div class="team-card">
         <div class="card-image">
             <img
                 src="${team[i].foto}"
-                alt="Wayne Barnett"
+                alt=""
             />
         </div>
         <div class="card-text">
